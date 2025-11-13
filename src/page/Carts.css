@@ -1,0 +1,134 @@
+.cart-page {
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e293b;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.cart-header h3 {
+  font-size: 18px; 
+  margin: 0;
+}
+
+.cart-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.cart-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cart-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-image {
+  width: 150px;
+  height: 150px;
+  background-color: #4ade80;
+  margin: 0 auto 10px;
+  border-radius: 8px;
+}
+
+.cart-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cart-title {
+  font-size: 14px;
+  color: #333;
+  height: 40px;
+  overflow: hidden;
+}
+
+.cart-price {
+  font-weight: bold;
+  color: #444;
+}
+
+.btn.delete {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.btn.delete:hover {
+  background-color: #e02e2f;
+}
+
+
+.cart-summary {
+  background-color: #f8fafc;
+  border-top: 2px solid #e2e8f0;
+  margin-top: 25px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  gap: 12px;
+  color: black;
+}
+
+.summary-info {
+  text-align: center;
+}
+
+.total-price {
+  background-color: #16a34a;
+  color: #050404;
+  padding: 3px 10px;
+  border-radius: 8px;
+}
+
+.checkout-wrapper {
+  display: flex;
+  justify-content: center; 
+  width: 100%;
+}
+
+.btn.checkout {
+  background-color: #facc15;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.btn.checkout:hover {
+  background-color: #fbbf24;
+}
+
+
+.empty-cart {
+    color: white;
+}
